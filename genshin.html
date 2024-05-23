@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Genesis Crystals</title>
+    <link rel="shortcut icon" type="image/png" href="pixelpurse.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFD7D7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #FF6D97;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .brand {
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .brand img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn img {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: opacity 0.3s;
+        }
+
+        .btn img:hover {
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            margin-bottom: 200px;
+        }
+
+        h1, h3 {
+            color: #FF6D97;
+            margin-bottom: 20px;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        .step label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #FF6D97;
+        }
+
+        .step input,
+        .step select {
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .credits-select {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .credit-item {
+            display: flex;
+            align-items: center;
+            background-color: #FFD7D7;
+            border: 1px solid #FF6D97;
+            border-radius: 5px;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .credit-item label {
+            flex-grow: 1;
+        }
+
+        .credit-item input[type="number"] {
+            width: 60px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .credit-item button {
+            margin-right: 10px;
+            padding: 5px 10px;
+            background-color: #FF6D97;
+            color: #FFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .credit-item button:hover {
+            background-color: #ff85af;
+        }
+
+        .cart button,
+        .container form button {
+            padding: 10px 20px;
+            background-color: #FF6D97;
+            color: #FFF;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cart button:hover,
+        .container form button:hover {
+            background-color: #ff85af;
+        }
+
+        .game-image {
+            max-width: 50%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .cart {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            background-color: #FFF;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            margin-bottom: 200px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #FFD7D7;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #FF6D97;
+            color: #FFF;
+        }
+
+        .mode-label {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .mode-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+
+        .payment-options {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="brand">
+            <img src="pixelpurse.png" alt="Logo">
+            PixelPurse
+        </h1>
+
+        <div class="btn-group">
+            <a href="index.html" class="btn"><img src="home.png" alt="Home"></a>
+            <a href="shop.html" class="btn"><img src="shop.png" alt="Shop"></a>
+            <a href="about_us.html" class="btn"><img src="aboutus.png" alt="About Us"></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="genshin.jpg" alt="Genshin Impact" class="game-image">
+        <h1>Buy Genesis Crystals</h1>
+        <form id="purchase-form" method="post">
+            <!-- Select Credits -->
+            <div class="step">
+                <label>Select Credit Amount:</label>
+                <div class="credits-select">
+                    <div class="credit-item">
+                        <button type="button" onclick="addToCart('60 Crystals', 55, 'quantity-60')">+</button>
+                        <label for="crs-60">60 Crystals ₱55</label>
+                        <input type="number" id="quantity-60" min="0" max="99" value="0">
+                    </div>
+                    <div class="credit-item">
+                        <button type="button" onclick="addToCart('330 Crystals', 280, 'quantity-330')">+</button>
+                        <label for="crs-330">330 Crystals ₱280</label>
+                        <input type="number" id="quantity-330" min="0" max="99" value="0">
+                    </div>
+                    <div class="credit-item">
+                        <button type="button" onclick="addToCart('1,090 Crystals', 830, 'quantity-1090')">+</button>
+                        <label for="crs-1090">1,090 Crystals ₱830</label>
+                        <input type="number" id="quantity-1090" min="0" max="99" value="0">
+                    </div>
+                    <div class="credit-item">
+                        <button type="button" onclick="addToCart('2,240 Crystals', 1670, 'quantity-2240')">+</button>
+                        <label for="crs-2240">2,240 Crystals ₱1,670</label>
+                        <input type="number" id="quantity-2240" min="0" max="99" value="0">
+                    </div>
+                    <div class="credit-item">
+                        <button type="button" onclick="addToCart('3,880 Crystals', 2800, 'quantity-3880')">+</button>
+                        <label for="crs-3880">3,880 Crystals ₱2,800</label>
+                        <input type="number" id="quantity-3880" min="0" max="99" value="0">
+                    </div>
+                    <div class="credit-item">
+                        <button type="button" onclick="addToCart('8,080 Crystals', 5500, 'quantity-8080')">+</button>
+                        <label for="crs-8080">8,080 Crystals ₱5,500</label>
+                        <input type="number" id="quantity-8080" min="0" max="99" value="0">
+                    </div>
+                </div>
+            </div>
+
+            <!-- View Cart -->
+            <button type="button" onclick="viewCart()">View Cart</button>
+        </form>
+    </div>
+
+    <div class="cart" id="yourCart">
+        <h1>Your Cart</h1>
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Cart items will show here -->
+            </tbody>
+        </table><br><br>
+        <div id="totalPriceDisplay"></div><br>
+        <div class="step">
+            <label for="user-id">Enter UID:</label>
+            <input type="text" id="user-id" name="user-id" required>
+            <label>Select Server:</label>
+            <select name="server" id="server" required>
+                <option value="NA">North America</option>
+                <option value="EU">Europe</option>
+                <option value="ASIA">Asia</option>
+                <option value="TW_HK_MO">TW, HK, MO</option>
+            </select>
+        </div>
+        <div class="step">
+            <h4 style="color: #FF6D97;">Payment Mode</h4>
+            <div class="payment-options">
+                <label for="gcash" class="mode-label"><input type="radio" id="gcash" name="mode" value="GCash"><img src="gcash.png" alt="GCash" class="mode-img"></label>
+                <label for="paymaya" class="mode-label"><input type="radio" id="paymaya" name="mode" value="PayMaya"><img src="paymaya.png" alt="PayMaya" class="mode-img"></label>
+            </div>
+            <div>
+                <label for="user-number">Enter Account Number:</label>
+                <input type="text" id="user-number" name="user-number" required>
+            </div>
+        </div>
+        <div class="step">
+            <label for="user-email">Enter e-mail (for receipt):</label>
+            <input type="email" id="user-email" name="user-email" required>
+        </div>
+        <div class="step">
+            <input type="checkbox" name="updatechoice" value="yes" id="update"><label for="update">Receive updates from PixelPurse about new in-game currencies for sale, discounts, and more!</label>
+        </div>
+        <button onclick="confirmOrder()">Confirm Order</button>
+    </div>
+
+    <script>
+        const cart = [];
+
+        function addToCart(product, price, quantityId) {
+            const quantity = document.getElementById(quantityId).value;
+            if (quantity > 0) {
+                const item = {
+                    product: product,
+                    price: price,
+                    quantity: parseInt(quantity),
+                    total: price * quantity
+                };
+                const existingItemIndex = cart.findIndex(cartItem => cartItem.product === product);
+                if (existingItemIndex !== -1) {
+                    cart[existingItemIndex].quantity = parseInt(quantity);
+                    cart[existingItemIndex].total = price * quantity;
+                } else {
+                    cart.push(item);
+                }
+                updateCartTable();
+            }
+        }
+
+        function updateCartTable() {
+            const cartTableBody = document.querySelector("#cart-table tbody");
+            cartTableBody.innerHTML = '';
+            let totalPrice = 0;
+            cart.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.product}</td>
+                    <td>₱${item.price}</td>
+                    <td>${item.quantity}</td>
+                    <td>₱${item.total}</td>
+                `;
+                cartTableBody.appendChild(row);
+                totalPrice += item.total;
+            });
+            document.getElementById('totalPriceDisplay').innerHTML = `<h3>Total Price: ₱${totalPrice}</h3>`;
+        }
+
+        function viewCart() {
+            updateCartTable();
+            document.getElementById("yourCart").scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function confirmOrder() {
+            const userId = document.getElementById("user-id").value;
+            const server = document.getElementById("server").value;
+            const paymentMode = document.querySelector('input[name="mode"]:checked');
+            const email = document.getElementById("user-email").value;
+            const receiveUpdates = document.getElementById("update").checked;
+            const accountNumber = document.getElementById("user-number").value;
+
+            if (userId.length !== 9 || isNaN(userId)) {
+                window.alert("Please enter a valid UID.");
+                return;
+            }
+
+            if (!email.includes("@")) {
+                window.alert("Please enter a valid email address.");
+                return;
+            }   
+
+            if (!paymentMode) {
+                window.alert("Please select a payment method.");
+                return;
+            }
+
+            if (accountNumber.length !== 11 || isNaN(accountNumber)) {
+                window.alert("Please enter a valid 11-digit account number.");
+                return;
+            }
+
+            const cartItems = cart.map(item => `${item.quantity}x ${item.product} - ₱${item.total}`).join('\n');
+            const totalPrice = cart.reduce((acc, item) => acc + item.total, 0);
+
+            const message = `UID: ${userId}\nServer: ${server}\nPayment Mode: ${paymentMode.value}\nEmail: ${email}\nReceive Updates: ${receiveUpdates ? 'Yes' : 'No'}\n\nItems Purchased:\n${cartItems}\n\nTotal Price: ₱${totalPrice}\n\nORDER CONFIRMED. Please check your Genshin Impact account. Thank you for purchasing at PixelPurse!`;
+
+            window.alert(message);
+        }
+    </script>
+</body>
+</html>

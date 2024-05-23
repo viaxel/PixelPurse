@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="shortcut icon" type="image/png" href="pixelpurse.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFD7D7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #FF6D97;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .brand {
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .brand img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn img {
+            width: 40px; 
+            height: 40px; 
+            margin: 0 10px; 
+            border-radius: 5px;
+            transition: opacity 0.3s;
+        }
+
+        .btn img:hover {
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-around; 
+            margin-top: 40px;
+            gap: 40px; 
+        }
+
+        .box {
+            position: relative;
+            flex: 1;
+            background-color: #FFF;
+            border-radius: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 30px; 
+            text-align: center;
+            width: 400px; 
+            height: 600px; 
+            overflow: hidden; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            transition: box-shadow 0.3s ease; 
+        }
+
+        .box img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .box h1 {
+            font-size: 24px; 
+            color: #FF6D97;
+            margin-bottom: 10px; 
+        }
+
+        .box p {
+            font-size: 18px; 
+            color: #666;
+            margin-bottom: 80px; 
+        }
+
+        .buy-button {
+            position: absolute;
+            bottom: -90px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: #FF6D97;
+            color: #FFF;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: bottom 0.3s ease; 
+            cursor: pointer; 
+            text-decoration: none; 
+        }
+
+        .box:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+        }
+
+        .box:hover .buy-button {
+            bottom: 30px; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="brand">
+            <img src="pixelpurse.png" alt="Logo">
+            PixelPurse
+        </h1>
+        
+        <div class="btn-group">
+            <a href="index.html" class="btn"><img src="home.png" alt="Home"></a>
+            <a href="shop.html" class="btn"><img src="shop.png" alt="Shop"></a>
+            <a href="about_us.html" class="btn"><img src="aboutus.png" alt="About Us"></a>
+        </div>
+        
+    </div>
+
+    <div class="container">
+        <div class="box-container">
+            <div class="box">
+                <img src="valorant.jpg" alt="Valorant">
+                <h1>VALORANT</h1>
+                <p>Engage in tactical FPS battles in VALORANT. Use strategic abilities and teamwork to achieve victory.</p>
+                <a href="valorant.html" class="buy-button">Buy<a>
+            </div>
+			<div class="box">
+                <img src="genshin.jpg" alt="Genshin Impact"><br><br><br>
+                <h1>Genshin Impact</h1><br><br>
+                <p>Explore the world of Genshin Impact! Discover breathtaking landscapes and engage in thrilling battles.</p>
+                <a href="genshin.html" class="buy-button">Buy</a>
+            </div>
+            <div class="box">
+                <img src="mobile legends.png" alt="Mobile Legends: Bang Bang">
+                <h1>Mobile Legends: Bang Bang</h1>
+                <p>Join thrilling multiplayer battles in Mobile Legends. Master heroes and clash in epic arenas.</p>
+                <a href="mlbb.html" class="buy-button">Buy</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
