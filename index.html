@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPurse</title>
+    <link rel="shortcut icon" type="image/png" href="pixelpurse.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFD7D7;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .brand-logo {
+            display: block;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 7%;
+        }
+        
+        .navbar {
+            background-color: #FF6D97;
+            text-align: left;
+            padding: 10px 20px;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn img {
+            width: 40px;
+            height: 40px;
+            margin: 0 20px; /* Adjust margin for spacing */
+            border-radius: 5px;
+            transition: opacity 0.3s;
+            cursor: pointer;
+        }
+
+        .btn img:hover {
+            opacity: 0.8;
+        }    
+        
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+            overflow: hidden; /* Hides overflowing content */
+        }
+        
+        .tagline {
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            font-size: 100px;
+            font-weight: bold;
+            color: #FF6D97;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+        
+        .overlay {
+            width: 1879px;
+            height: 600px;
+            transition: opacity 0.3s ease-in-out;
+        }
+		
+        .slide-button {
+            position: absolute;
+            bottom: -70px; /* Hidden below the container */
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 15px 25px;
+            background-color: #FF6D97;
+            color: white;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 20px;
+			font-weight: bold;
+            transition: bottom 0.5s ease; /* Transition for sliding up */
+			text-decoration: none;
+        }        
+		
+        .overlay:hover {
+            opacity: 0.7;
+            background-color: #FFF;
+        }
+
+        .container:hover .slide-button {
+            bottom: 70px; /* Slide up into view */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="pixelpurse.png" alt="PixelPurse" class="brand-logo">
+        <h1 style="margin-top: 5px; color: #FF6D97; text-align:center;">PixelPurse</h1>
+    </div>
+    
+    <div class="navbar">
+        <div class="btn-group">
+            <a href="index.html" class="btn"><img src="home.png" alt="Home"></a>
+            <a href="shop.html" class="btn"><img src="shop.png" alt="Shop"></a>
+            <a href="about_us.html" class="btn"><img src="aboutus.png" alt="About Us"></a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <img src="homepic.png" alt="Games" class="overlay">
+        <div class="tagline">Play Hard,<br> Shop Easy.</div>
+        <a href="shop.html" class="slide-button">Shop Now!</a> 
+    </div>
+</body>
+</html>
